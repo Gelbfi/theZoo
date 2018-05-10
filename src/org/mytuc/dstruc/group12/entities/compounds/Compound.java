@@ -75,6 +75,7 @@ public abstract class Compound {
             this.animals[index] = animal;
             animal.setCompound( this );
             animal.moveToZoo( myZoo );
+            // TODO: Add Output to perform Task Number 2 - An animal has been added, or something like that
         }
         return index > -1;
     }

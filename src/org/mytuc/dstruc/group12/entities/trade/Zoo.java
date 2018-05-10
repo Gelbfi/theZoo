@@ -40,6 +40,7 @@ public class Zoo {
         int index = ArrayHelper.getFreeEntry(Arrays.asList(this.compounds));
         if(index > -1){
             this.compounds[index] = new MammalCompound(this, name, spaceType, habitType);
+            // TODO: add output identical to task no 2
         }
         return index > 1;
     }
@@ -47,6 +48,7 @@ public class Zoo {
         int index = ArrayHelper.getFreeEntry(Arrays.asList(this.compounds));
         if(index > -1){
             this.compounds[index] = new BirdCage(this, name, spaceType, habitType);
+            // TODO: add output identical to task no 2
         }
         return index > 1;
     }
@@ -54,6 +56,7 @@ public class Zoo {
         int index = ArrayHelper.getFreeEntry(Arrays.asList(this.compounds));
         if(index > -1){
             this.compounds[index] = new FishTank(this, name, spaceType, habitType);
+            // TODO: add output identical to task no 2
         }
         return index > 1;
     }
@@ -76,6 +79,7 @@ public class Zoo {
         if(index > -1) {
             this.employees[index] = employee;
             employee.setEmployer( this );
+            // TODO: add output identical to task no 2
         }
         return index > 1;
     }
@@ -100,9 +104,10 @@ public class Zoo {
 
     public boolean addVisitor(Visitor visitor) {
         int index = ArrayHelper.getFreeEntry(Arrays.asList(this.visitors));
-        if(index > -1)
+        if(index > -1) {
             this.visitors[index] = visitor;
-
+            // TODO: add output identical to task no 2
+        }
         return index > 1;
     }
 
