@@ -4,7 +4,7 @@ public class DEBUG {
     private DEBUG() {
     }
     // TODO: extend DEBUG class with static method to concatenate log strings
-    // TODO: extend DEBUG class with static method to save that one to a given file
+
     private static boolean useOutput = true;
 
     public static void log(String logMessage) {
@@ -15,7 +15,9 @@ public class DEBUG {
     public static void setOutput(boolean status) {
         useOutput = status;
     }
-
+    public static void saveOutputToFile(String filePath){
+        // TODO: extend DEBUG class method "saveOutputToFile" to save the concatenate log string to a given file
+    }
     public static void logHeading(String headString) {
         if (!useOutput)
             return;
