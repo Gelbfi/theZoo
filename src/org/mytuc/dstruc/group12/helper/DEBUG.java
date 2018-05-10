@@ -3,7 +3,7 @@ package org.mytuc.dstruc.group12.helper;
 public class DEBUG {
     private DEBUG() {
     }
-    // TODO: extend DEBUG class with static method to concatenate log strings and save that one to a file
+    // TODO: extend DEBUG class with static method to concatenate log strings
     // TODO: extend DEBUG class with static method to save that one to a given file
     private static boolean useOutput = true;
 
